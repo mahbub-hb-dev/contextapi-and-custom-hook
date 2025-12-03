@@ -11,7 +11,7 @@ const User = ({user}) => {
 
   return ( 
     <div className="bg-[pink] p-2 mb-3 rounded-md">
-        <h3 className="font-medium"> Id : {id} </h3>
+        <h3 className="font-medium text-sm"> Id : {id} </h3>
         <h2 className="font-bold"> Name : {username} </h2>
         <button 
             onClick={()=>handleDelete(id)} 
