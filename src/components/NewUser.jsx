@@ -13,10 +13,10 @@ const NewUser = () => {
     }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="p-3 bg-amber-200 mx-auto">
         <label htmlFor="username"> User Name : </label>
         <input value={username} onChange={(e)=>setUsername(e.target.value)} type="text" className="border p-1 rounded" />
-        <button className="border rounded text-sm ml-2" type="submit"> Add User </button>
+        <button className="border rounded text-sm ml-2 px-2 py-1 bg-green-600 text-white" type="submit"> Add User </button>
     </form>
   )
 }

@@ -4,7 +4,7 @@ import User from "./User"
 const Users = () => {
     const {users} = useUsersHook();
   return (
-    <div>
+    <div className="p-3">
       {users.map((user) => <User key={user.id} user={user} /> )}
     </div>
   )

@@ -10,10 +10,14 @@ const User = ({user}) => {
     }
 
   return ( 
-    <div>
-        <h1> {id} </h1>
-        <h1> {username} </h1>
-        <button onClick={()=>handleDelete(id)} className="border rounded text-sm"> Delete </button>
+    <div className="bg-[pink] p-2 mb-3 rounded-md">
+        <h3 className="font-medium"> Id : {id} </h3>
+        <h2 className="font-bold"> Name : {username} </h2>
+        <button 
+            onClick={()=>handleDelete(id)} 
+            className="border rounded text-sm bg-blue-500 text-white px-2 py-1"> 
+            Remove 
+        </button>
     </div>
   )
 }
